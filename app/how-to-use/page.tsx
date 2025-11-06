@@ -1,8 +1,10 @@
+
+
 import { NavBar } from "../components/UiComponents";
 
 const HowToUse = () => {
   return (
-    <div className="w-full h-screen bg-gradient-to-tr from-rose-200 via-gray-200 to-blue-200 flex flex-col justify-center items-center gap-10 p-5">
+    <div className="w-full h-screen bg-gradient-to-tr from-rose-300 via-gray-300 to-blue-300 flex flex-col justify-center items-center gap-10 p-5">
       <label className="bg-gradient-to-r from-rose-600 to-black text-transparent bg-clip-text font-bold text-5xl">
         How<span className="text-gray-900"> to use</span>
       </label>
@@ -12,7 +14,7 @@ const HowToUse = () => {
       </p>
       <div className="flex flex-row w-full h-auto xl:h-1/2 gap-5">
         <div className="md:w-1/3 w-full rounded-lg flex flex-col gap-5 relative">
-          <label className="w-10 h-10 bg-rose-500 text-white absolute rounded-full flex justify-center items-center left-2 top-2">
+          <label className="w-5 h-5 bg-rose-500 text-white absolute rounded-full flex justify-center items-center left-2 top-2">
             1
           </label>
           <div className="top-0 bottom-0 left-0 right-0 absolute flex justify-center items-center rounded-lg hover:bg-black/50 text-sm text-transparent hover:text-white transition duration-700 ease-in-out p-5">
@@ -21,7 +23,7 @@ const HowToUse = () => {
           <img className="w-full h-full rounded-lg" src="/images/how01.jpg" loading="lazy" />
         </div>
         <div className="md:w-1/3 w-full rounded-lg flex flex-col gap-5 relative">
-          <label className="w-10 h-10 bg-rose-500 text-white absolute rounded-full flex justify-center items-center left-2 top-2">
+          <label className="w-5 h-5 bg-rose-500 text-white absolute rounded-full flex justify-center items-center left-2 top-2">
             2
           </label>
           <div className="top-0 bottom-0 left-0 right-0 absolute flex justify-center items-center rounded-lg hover:bg-black/50 text-sm text-transparent hover:text-white transition duration-700 ease-in-out p-5">
@@ -30,7 +32,7 @@ const HowToUse = () => {
           <img className="w-full h-full rounded-lg" src="/images/how02.jpg" loading="lazy" />
         </div>
         <div className="md:w-1/3 w-full rounded-lg flex flex-col gap-5 relative">
-          <label className="w-10 h-10 bg-rose-500 text-white absolute rounded-full flex justify-center items-center left-2 top-2">
+          <label className="w-5 h-5 bg-rose-500 text-white absolute rounded-full flex justify-center items-center left-2 top-2">
             3
           </label>
           <div className="top-0 bottom-0 left-0 right-0 absolute flex justify-center items-center rounded-lg hover:bg-black/50 text-sm text-transparent hover:text-white transition duration-700 ease-in-out p-5">

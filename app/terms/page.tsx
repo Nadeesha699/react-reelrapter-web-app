@@ -2,7 +2,7 @@ import { NavBar } from "../components/UiComponents";
 
 const Terms = () => {
   return (
-    <div className="w-full h-screen bg-gradient-to-tr from-rose-200 via-gray-200 to-blue-200 flex flex-col justify-center items-center gap-10 p-5">
+    <div className="w-full h-screen bg-gradient-to-tr from-rose-300 via-gray-300 to-blue-300 flex flex-col justify-center items-center gap-10 p-5">
       <div className="backdrop-blur-md bg-white overflow-y-auto no-scrollbar h-3/4 lg:w-2/3 w-full p-5 rounded-lg text-gray-900 flex flex-col gap-5">
         <label className="bg-gradient-to-r from-rose-600 to-black text-transparent bg-clip-text font-bold text-5xl">
           Terms<span className="text-gray-900"> & conditions</span>

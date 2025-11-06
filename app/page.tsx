@@ -21,13 +21,24 @@ export default function Home() {
         const best =
           data.formats.find((f: any) => f.ext === "mp4") || data.formats[0];
         const videoUrl = best.url;
-        const a = document.createElement("a");
-        a.href = videoUrl;
-        a.target = "_blank";
-        a.download = `${data.title || "video"}.${best.ext}`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+        // const thumbnail = best.thumbnail;
+        // const title = best.title;
+
+        sessionStorage.setItem("videoUrl", best.url);
+        sessionStorage.setItem("thumbnail", data.thumbnail);
+        sessionStorage.setItem("title", data.title);
+        sessionStorage.setItem("duration", data.duration);
+        sessionStorage.setItem("urlTxt",urlText)
+
+        // window.location.href = `/download`;
+        window.location.href = "/download"
+        // const a = document.createElement("a");
+        // a.href = videoUrl;
+        // a.target = "_blank";
+        // a.download = `${data.title || "video"}.${best.ext}`;
+        // document.body.appendChild(a);
+        // a.click();
+        // document.body.removeChild(a);
       } else {
         toast.error("No downloadable formats found.");
       }
@@ -44,7 +55,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full h-screen bg-gradient-to-tr from-rose-200 via-gray-200 to-blue-200 flex flex-col justify-center gap-5 items-center p-5">
+    <div className="w-full h-screen bg-gradient-to-tr from-rose-300 via-gray-300 to-blue-300 flex flex-col justify-center gap-5 items-center p-5">
       <div className="flex flex-col gap-2 justify-end items-end">
         <label className="bg-gradient-to-r from-rose-600 to-black text-transparent bg-clip-text font-bold text-6xl lg:text-8xl">
           Reel<span className="text-gray-900">rapter</span>
@@ -54,7 +65,7 @@ export default function Home() {
         </label>
       </div>
       <form
-        className="flex flex-row bg-zinc-300 w-full md:w-1/2 rounded-full justify-between items-center p-2 gap-2"
+        className="flex flex-row bg-white w-full md:w-1/2 rounded-full justify-between items-center p-2 gap-2"
         onSubmit={handleDownload}
       >
         <LuClipboard
