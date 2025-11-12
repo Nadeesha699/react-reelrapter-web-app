@@ -28,17 +28,8 @@ export default function Home() {
         sessionStorage.setItem("thumbnail", data.thumbnail);
         sessionStorage.setItem("title", data.title);
         sessionStorage.setItem("duration", data.duration);
-        sessionStorage.setItem("urlTxt",urlText)
 
-        // window.location.href = `/download`;
         window.location.href = "/download"
-        // const a = document.createElement("a");
-        // a.href = videoUrl;
-        // a.target = "_blank";
-        // a.download = `${data.title || "video"}.${best.ext}`;
-        // document.body.appendChild(a);
-        // a.click();
-        // document.body.removeChild(a);
       } else {
         toast.error("No downloadable formats found.");
       }

@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import { LuHouse, LuScale, LuShieldCheck } from "react-icons/lu";
+import { useRouter } from "next/navigation";
+import { LuArrowLeft, LuHouse, LuScale, LuShieldCheck } from "react-icons/lu";
 import { MdQuiz } from "react-icons/md";
 
 export const LoadingUI = () => {
@@ -77,5 +80,18 @@ export const NavBar: React.FC<NavBarProps> = ({
         <label className="truncate hidden sm:block">Privacy policy</label>
       </Link>
     </div>
+  );
+};
+
+export const BackButton = () => {
+  const router = useRouter();
+  return (
+    <button
+      onClick={() => {
+        router.back();
+      }}
+    >
+      <LuArrowLeft size={30} className="fixed left-10 top-10 text-black" />
+    </button>
   );
 };
