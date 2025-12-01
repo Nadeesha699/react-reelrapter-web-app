@@ -112,8 +112,8 @@ export const PageTitile = () => {
 export const PageLoadingScreen = () => {
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center space-y-6">
-      <div className="w-24 h-24 border-4 border-red-500 rounded-full flex items-center justify-center animate-pulse shadow-red-600 shadow-[0_0_20px]">
-        <span className="text-red-500 text-5xl font-extrabold drop-shadow-[0_0_8px_rgba(255,0,0,0.8)]">
+      <div className="w-24 h-24 border-4 border-rose-600 rounded-full flex items-center justify-center animate-pulse shadow-red-600 shadow-[0_0_20px]">
+        <span className="text-rose-600 text-5xl font-extrabold drop-shadow-[0_0_8px_rgba(255,0,0,0.8)]">
           R
         </span>
       </div>

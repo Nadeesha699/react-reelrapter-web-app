@@ -1,10 +1,14 @@
 "use client";
 
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { LuClipboard, LuDownload } from "react-icons/lu";
 import { toast, ToastContainer } from "react-toastify";
-import { LoadingUI, NavBar, PageLoadingScreen, PageTitile } from "./components/UiComponents";
+import {
+  LoadingUI,
+  NavBar,
+  PageLoadingScreen,
+  PageTitile,
+} from "./components/UiComponents";
 import { getDownloadUrl } from "./api/DownloadApi";
 
 export default function Home() {
@@ -52,9 +56,15 @@ export default function Home() {
   return (
     <div className="w-full h-screen bg-gradient-to-tr from-rose-300 via-gray-300 to-blue-300 flex flex-col justify-center gap-5 items-center p-5">
       {pageLoading ? (
-       <PageLoadingScreen/>
+        <PageLoadingScreen />
       ) : (
         <>
+          <div className="flex flex-row gap-2 justify-center items-center fixed top-5 left-5">
+            <img src="/logo-v2.png" alt="icon" className="w-12" />
+            <label className="bg-gradient-to-r from-rose-600 to-black text-transparent bg-clip-text font-bold text-3xl">
+              Reelrapter
+            </label>
+          </div>
           <PageTitile />
           <form
             className="flex flex-row bg-white w-full md:w-1/2 rounded-full justify-between items-center p-2 gap-2"

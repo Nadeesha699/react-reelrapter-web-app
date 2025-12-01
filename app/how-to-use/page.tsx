@@ -32,6 +32,7 @@ const HowToUse = () => {
                 Open TikTok, YouTube, or Facebook and copy the video link
               </div>
               <img
+              loading="lazy"
                 className="w-full h-full rounded-lg"
                 src="/images/how01.jpg"
                 loading="lazy"
