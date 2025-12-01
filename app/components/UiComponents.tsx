@@ -95,3 +95,28 @@ export const BackButton = () => {
     </button>
   );
 };
+
+export const PageTitile = () => {
+  return (
+    <div className="flex flex-col gap-2 justify-end items-end">
+      <label className="bg-gradient-to-r from-rose-600 to-black text-transparent bg-clip-text font-bold text-6xl lg:text-8xl">
+        Reel<span className="text-gray-900">rapter</span>
+      </label>
+      <label className="text-gray-500 text-sm">
+        Download. Keep. Watch offline.
+      </label>
+    </div>
+  );
+};
+
+export const PageLoadingScreen = () => {
+  return (
+    <div className="h-screen w-full flex flex-col items-center justify-center space-y-6">
+      <div className="w-24 h-24 border-4 border-red-500 rounded-full flex items-center justify-center animate-pulse shadow-red-600 shadow-[0_0_20px]">
+        <span className="text-red-500 text-5xl font-extrabold drop-shadow-[0_0_8px_rgba(255,0,0,0.8)]">
+          R
+        </span>
+      </div>
+    </div>
+  );
+};
